@@ -51,7 +51,7 @@ const MobileCard = ({
             display: 'inline-block',
             marginTop: '4px'
           }}>
-            🔋 Best Battery
+            Best Battery
           </div>
         )}
         <p style={{ marginTop: '10px', marginBottom: 0 }}>Camera: {mobile.camera}MP</p>
@@ -66,7 +66,7 @@ const MobileCard = ({
             display: 'inline-block',
             marginTop: '4px'
           }}>
-            📸 Best Camera
+             Best Camera
           </div>
         )}
         <p style={{ marginTop: '10px' }}>RAM: {mobile.ram}</p>
