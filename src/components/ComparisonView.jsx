@@ -3,10 +3,10 @@ import React from 'react';
 const ComparisonView = ({ selected }) => {
   if (selected.length < 2) return null;
 
-  // Utility to get numeric RAM value
+  
   const ramValue = (ram) => parseInt(ram.replace(/\D/g, '')) || 0;
 
-  // Determine best specs
+  
   const batteryWinner = selected.reduce((max, m) =>
     m.battery > max.battery ? m : max
   );
@@ -38,7 +38,7 @@ const ComparisonView = ({ selected }) => {
         ))}
       </div>
 
-      {/* 🏆 Smart Summary */}
+     
       <div style={{ marginTop: '1.5rem', textAlign: 'center' }}>
         <p><strong>{batteryWinner.name}</strong> has the most battery</p>
         <p><strong>{ramWinner.name}</strong> has the most RAM</p>
